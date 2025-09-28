@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.course-list {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.course-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.course-item:last-child {
+    border-bottom: none;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.course-author {
+    font-size: 14px;
+    color: #555;
+}
+
+.sort-options {
+    margin-bottom: 20px;
+}
+
+.sort-button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.sort-button:hover {
+    background-color: #0056b3;
+}

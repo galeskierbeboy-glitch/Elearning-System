@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.course-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.course-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.course-item:hover {
+    background-color: #f1f1f1;
+}
+
+.sort-options {
+    margin-bottom: 20px;
+}
+
+.sort-button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.sort-button:hover {
+    background-color: #0056b3;
+}
+
+.notification-panel {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.notification-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.notification-item:hover {
+    background-color: #f1f1f1;
+}
