@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 50px;
-  height: 55px; /* smaller height */
+  height: 55px;
 }
 
 /* Navigation Links */
@@ -60,7 +60,7 @@
   align-items: center;
   min-height: 100vh;
   background-color: #f3f3f3;
-  padding-top: 100px; /* offset for fixed bar */
+  padding-top: 100px;
 }
 
 .create-account-box {
@@ -79,29 +79,11 @@
   margin-bottom: 40px;
 }
 
-.form-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.form-left,
-.form-right {
-  width: 45%;
-}
-
-.divider {
-  width: 1px;
-  background-color: #999;
-  margin: 0 20px;
-}
-
 .form-group {
   margin-bottom: 25px;
 }
 
-.form-group input,
-.form-group select {
+.form-group input {
   width: 100%;
   background-color: #f5f5dc;
   border: none;
@@ -119,12 +101,32 @@
   margin-top: 6px;
 }
 
+/* ===== BUTTON CONTAINER ===== */
 .button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.button-container button {
+/* Back Button */
+.back-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+/* Submit Button */
+.button-container button[type='submit'] {
   background-color: #000;
   color: white;
   border: none;
@@ -135,6 +137,6 @@
   transition: 0.3s;
 }
 
-.button-container button:hover {
+.button-container button[type='submit']:hover {
   background-color: #222;
 }
