@@ -1,52 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f8f8;
+  font-family: "Poppins", sans-serif;
 }
 
-.profile-container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.profile-content {
+  max-width: 650px;      /* increased from 500px */
+  width: 100%;
+  padding: 56px 48px;    /* increased padding */
+  background: #fff;
+  border-radius: 18px;   /* slightly larger radius */
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08); /* deeper shadow */
+}
+
+.profile-title {
+  font-size: 2.4rem;     /* larger title */
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.profile-card {
+  background: #f4f4f9;
+  border-radius: 16px;
+  padding: 38px 32px;    /* increased padding */
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
 }
 
 .profile-header {
-    text-align: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;             /* increased gap */
+  margin-bottom: 28px;   /* increased margin */
 }
 
-.profile-header h1 {
-    font-size: 24px;
-    color: #333;
+.profile-avatar {
+  width: 110px;          /* bigger avatar */
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a90e2;
 }
 
-.profile-info {
-    margin-bottom: 20px;
+.profile-role {
+  color: #4a90e2;
+  font-weight: 500;
+  margin-top: 4px;
 }
 
-.profile-info label {
-    font-weight: bold;
+.profile-header h2 {
+  font-size: 2rem;       /* larger name */
 }
 
-.profile-info p {
-    margin: 5px 0;
+.profile-info-list {
+  margin-bottom: 32px;   /* increased margin */
 }
 
-.edit-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+.profile-info-list > div {
+  margin-bottom: 14px;
+  color: #444;
+  font-size: 1.15rem;    /* slightly larger info text */
 }
 
-.edit-button:hover {
-    background-color: #0056b3;
+.profile-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.edit-btn {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;    /* bigger button */
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-btn:hover {
+  background: #357abd;
 }

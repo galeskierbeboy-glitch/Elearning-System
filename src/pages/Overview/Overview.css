@@ -1,61 +1,209 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+/* === MAIN WRAPPER === */
+.overview-wrapper {
+  display: flex;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
-.overview-container {
-    display: flex;
-    justify-content: space-between;
+/* === SIDEBAR (same as Settings) === */
+.sidebar {
+  width: 220px;
+  background-color: #0e0e0e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
 }
 
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 18px 0;
+}
+
+.sidebar ul li a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  padding: 10px 25px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.sidebar ul li.active a {
+  background-color: #555;
+  border-radius: 6px;
+  color: white;
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.sidebar ul li.logout a {
+  color: #e74c3c;
+}
+
+/* === CONTENT === */
 .overview-content {
-    flex: 1;
-    margin-right: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  padding: 40px;
 }
 
-.overview-header {
-    font-size: 24px;
-    margin-bottom: 20px;
+/* === TITLE & SUBTITLE === */
+.overview-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 5px;
 }
 
-.overview-list {
-    list-style-type: none;
-    padding: 0;
+.overview-subtitle {
+  color: #777;
+  margin-bottom: 20px;
 }
 
-.overview-list-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+/* === LAYOUT === */
+.overview-main {
+  display: flex;
+  gap: 30px;
 }
 
-.overview-list-item:last-child {
-    border-bottom: none;
+/* LEFT SIDE */
+.overview-left {
+  flex: 1;
 }
 
-.notification-panel {
-    width: 300px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.progress-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
 }
 
-.notification-header {
-    font-size: 20px;
-    margin-bottom: 15px;
+.progress-item {
+  margin-bottom: 15px;
 }
 
-.notification-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
-.notification-item:last-child {
-    border-bottom: none;
+.progress-bar {
+  background: #ddd;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #4a1d1d;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+/* RIGHT SIDE */
+.overview-right {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-card {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* STATS */
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stat-card {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.stat-icon {
+  background: #4a1d1d;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-percent {
+  background: #4a1d1d;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HOMEWORK SECTION */
+.homework-title {
+  font-weight: 600;
+  color: #222;
+}
+
+.homework-card {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.homework-info .subject {
+  font-weight: 600;
+  color: #000;
+}
+
+.homework-info .task {
+  color: #777;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.progress-bar.small {
+  height: 6px;
+  margin-top: 8px;
 }
