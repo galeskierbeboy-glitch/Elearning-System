@@ -3,9 +3,9 @@ import './NotificationPanel.css';
 
 const NotificationPanel = () => {
     const notifications = [
-        { id: 1, message: "New course available: React Basics", date: "2023-10-01" },
-        { id: 2, message: "Your assignment has been graded", date: "2023-09-30" },
-        { id: 3, message: "Upcoming webinar on JavaScript", date: "2023-09-29" },
+        { id: 1, message: "Computer Science: Just a quick reminder that Module 5 Assignment is due today at 11:59 PM. Make sure you’ve uploaded your work on the system before the deadline to avoid late penalties.", date: "2025-10-01" },
+        { id: 2, message: "EnviSci: Hello BSIT - 3B Just a quick reminder that Module 6 Assignment is due today at 11:59 PM. Make sure you’ve uploaded your work on the system before the deadline to avoid late penalties.", date: "2025-09-30" },
+        { id: 3, message: "Graphic Design Hello BSIT - 3B Just a quick reminder that Module 7 Assignment is due today at 11:59 PM. Make sure you’ve uploaded your work on the system before the deadline to avoid late penalties.", date: "2025-09-29" },
     ];
 
     return (
